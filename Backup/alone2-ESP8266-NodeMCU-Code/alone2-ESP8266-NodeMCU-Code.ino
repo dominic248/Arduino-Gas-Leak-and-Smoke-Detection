@@ -1,6 +1,6 @@
-#include <ESP8266WiFi.h>;
-#include <WiFiClient.h>;
-#include <ThingSpeak.h>;
+#include <ESP8266WiFi.h>
+#include <WiFiClient.h>
+#include <ThingSpeak.h>
 #include <ArduinoJson.h>
 #include <MQ2.h>
 #include <Wire.h> 
@@ -38,10 +38,10 @@ void setup() {
   WiFi.begin(ssid, password);
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
-    Serial.print(".");
-  }
   Serial.println("");
   Serial.println("WiFi connected...");
+    Serial.print(".");
+  }
   Serial.println("IP address: ");
   Serial.println(WiFi.localIP());
   ThingSpeak.begin(client);

@@ -1,6 +1,6 @@
-#include <ESP8266WiFi.h>;
-#include <WiFiClient.h>;
-#include <ThingSpeak.h>;
+#include <ESP8266WiFi.h>
+#include <WiFiClient.h>
+#include <ThingSpeak.h>
 #include <MQ2.h>
 #include <Wire.h>
 #include <Adafruit_GFX.h>
