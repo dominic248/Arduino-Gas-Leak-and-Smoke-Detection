@@ -9,7 +9,7 @@
 #define SCREEN_HEIGHT 64 // OLED display height, in pixels
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 
-const char* ssid = "Skynet"; //Your Network SSID
+const char* ssid = "delta24"; //Your Network SSID
 const char* password = "24081999"; //Your Network Password
 
 //
@@ -86,7 +86,7 @@ void loop() { // run over and over
     display.println("SMOKE: "+String(smoke)+"ppm");
     display.display(); 
     
-    if(lpg>450 || lpg<0 || smoke>2300 || smoke<0){
+    if(lpg>500 || lpg<0 || smoke>3000 || smoke<0){
       if(Dlpg==0){
         Dlpg=1;
         digitalWrite(Buzzer, HIGH);

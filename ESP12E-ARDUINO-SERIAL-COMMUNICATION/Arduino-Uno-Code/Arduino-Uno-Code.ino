@@ -24,5 +24,5 @@ void loop(){
   smoke=mq2.readSmoke();
   Serial.println(String(lpg)+","+String(co)+","+String(smoke)+".");
   Serial1.println(String(lpg)+","+String(co)+","+String(smoke)+"");
-  delay(1000);
+  delay(5000);
 }
