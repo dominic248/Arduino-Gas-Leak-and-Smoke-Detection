@@ -1,3 +1,2 @@
-*.* linguist-language=Arduino
 *.zip filter=lfs diff=lfs merge=lfs -text
 
